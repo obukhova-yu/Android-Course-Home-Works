@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/main_pickture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="170dp"
+        android:src="@mipmap/ic_banner"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/little_pickture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:minWidth="110dp"
+        android:minHeight="110dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_line1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:text="Beauty and the Beast"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/little_pickture"
+        app:layout_constraintTop_toBottomOf="@id/main_pickture" />
+
+    <TextView
+        android:id="@+id/date_of_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="March 2017 PG 129 minutes"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@id/little_pickture"
+        app:layout_constraintTop_toBottomOf="@id/movie_name" />
+
+    <ImageView
+        android:id="@+id/flag_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="40dp"
+        android:src="@drawable/ic_flag"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_pickture" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="260dp"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B19CD8"
+        android:text="RENT FROM R29.99"
+        app:layout_constraintEnd_toStartOf="@+id/right_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_line1" />
+
+    <Button
+        android:id="@+id/right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B19CD8"
+        android:text="BUY FROM R129.99"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/left_btn"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_line1" />
+
+    <View
+        android:id="@+id/grey_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintHeight="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_line1"
+        app:layout_constraintWidth="350dp" />
+
+    <View
+        android:id="@+id/grey_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintHeight="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_line1"
+        app:layout_constraintWidth="350dp" />
+
+    <TextView
+        android:id="@+id/movie_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:text="      The story and characters you know
+        and love come to spectacular life in the
+        live-action adaptation of Disney's animated
+        classic Beauty and the Beast."
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grey_line2" />
+
+    <TextView
+        android:id="@+id/rating_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_background_violet"
+        android:gravity="center"
+        android:text="4.5"
+        android:textColor="#FFF"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/family_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grey_line1" />
+
+    <ImageView
+        android:id="@+id/family_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_background_violet"
+        android:gravity="center"
+        android:src="@drawable/ic_people"
+        app:layout_constraintEnd_toStartOf="@+id/tomato_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rating_score"
+        app:layout_constraintTop_toBottomOf="@id/grey_line1" />
+
+    <ImageView
+        android:id="@+id/tomato_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_background_yellow"
+        android:gravity="center"
+        android:src="@drawable/ic_flower"
+        app:layout_constraintEnd_toStartOf="@+id/similar_icon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/family_icon"
+        app:layout_constraintTop_toBottomOf="@id/grey_line1" />
+
+    <ImageView
+        android:id="@+id/similar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_background_violet"
+        android:gravity="center"
+        android:src="@drawable/ic_carousel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tomato_icon"
+        app:layout_constraintTop_toBottomOf="@id/grey_line1" />
+
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="242 ratings"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/rating_score"
+        app:layout_constraintStart_toStartOf="@id/rating_score"
+        app:layout_constraintTop_toBottomOf="@id/rating_score" />
+
+    <TextView
+        android:id="@+id/family_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Family"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/family_icon"
+        app:layout_constraintStart_toStartOf="@id/family_icon"
+        app:layout_constraintTop_toBottomOf="@id/family_icon" />
+
+    <TextView
+        android:id="@+id/tomato_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="71%"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/tomato_icon"
+        app:layout_constraintStart_toStartOf="@id/tomato_icon"
+        app:layout_constraintTop_toBottomOf="@id/tomato_icon" />
+
+    <TextView
+        android:id="@+id/similar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Similar"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/similar_icon"
+        app:layout_constraintStart_toStartOf="@id/similar_icon"
+        app:layout_constraintTop_toBottomOf="@id/similar_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
