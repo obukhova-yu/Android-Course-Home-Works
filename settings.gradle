@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "Android Course Home Works"
 include ':app'
 include ':p062ConstraintLayout'
+include ':p071module'

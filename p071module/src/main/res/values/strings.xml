@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">GOBO Library</string>
+    <string name="start_title">Choose the GOBO</string>
+    <string name="start_descr">    A GOBO is an object placed inside or in front of a light source to control the shape of the emitted light and its shadow.</string>
+
+    <string name="radio1_choose">Monochrome</string>
+    <string name="radio2_choose">Colour</string>
+
+    <string name="item1_tool_bar_name">Geometry</string>
+    <string name="item2_tool_bar_name">Stars</string>
+    <string name="item3_tool_bar_name">Abstract</string>
+
+    <string name="item1_tool_bar_colour">On Black Back</string>
+    <string name="item2_tool_bar_colour">Abstract Colour</string>
+    <string name="item3_tool_bar_colour">Colour Fill</string>
+
+<!--Titles and Names of items in menu -->
+    <string name="on_bb_0153">0153</string>
+    <string name="on_bb_0157">0157</string>
+    <string name="on_bb_0161">0161</string>
+
+    <string name="col_abs_0122">0122</string>
+    <string name="col_abs_0136">0136</string>
+    <string name="col_abs_0166">0166</string>
+
+    <string name="col_fill_0435">0435</string>
+    <string name="col_fill_0438">0438</string>
+    <string name="col_fill_0429">0429</string>
+
+    <string name="geo_0410">0410</string>
+    <string name="geo_0005">0005</string>
+    <string name="geo_0291">0291</string>
+
+    <string name="star_0405">0405</string>
+    <string name="star_0009">0009</string>
+    <string name="star_0033">0033</string>
+
+    <string name="mono_abs_0375">0375</string>
+    <string name="mono_abs_0271">0271</string>
+    <string name="mono_abs_0632">0632</string>
+
+    <!--Descriptions -->
+    <string name="descr_on_bb_0153"> 0153 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_on_bb_0157"> 0157 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_on_bb_0161"> 0161 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+
+    <string name="descr_col_abs_0122"> 0122 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_col_abs_0136"> 0136 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_col_abs_0166"> 0166 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+
+    <string name="descr_col_fill_0435"> 0435 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_col_fill_0438"> 0438 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_col_fill_0429"> 0429 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+
+    <string name="descr_geo_0410"> 0410 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_geo_0005"> 0005 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_geo_0291"> 0291 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+
+    <string name="descr_star_0405"> 0405 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_star_0009"> 0009 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_star_0033"> 0033 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+
+    <string name="descr_mono_abs_0375"> 0375 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_mono_abs_0271"> 0271 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+    <string name="descr_mono_abs_0632"> 0632 Lcjdch jgh ggff bnvbnb vbvbv ljkjk kjkjk jkj k jk j jj kh  jh  h g</string>
+
+</resources>
