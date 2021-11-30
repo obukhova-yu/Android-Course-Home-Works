@@ -1,5 +1,6 @@
 package com.triare.p071module
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
@@ -7,27 +8,30 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
 
-    var viewModel:MainViewModel? = null
+    private var viewModel:MainViewModel? = null
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val factory = MainViewModelFactory(1)
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel?.goboModel?.observe(this, Observer {
 
-        viewModel=ViewModelProvider(this,factory).get(MainViewModel::class.java)
-        viewModel?.goboModel?.observe(this){
+            if (it != null) {
 
-            findViewById<TextView>(R.id.main_title).setText(it.title.toString())
-            findViewById<ImageView>(R.id.main_pickture).setImageResource(it.icon)
-            findViewById<TextView>(R.id.main_description).setText(it.descr.toString())
+                findViewById<TextView>(R.id.main_title).setText(it.title)
+                findViewById<ImageView>(R.id.main_pickture).setImageDrawable(getDrawable(it.icon))
+                findViewById<TextView>(R.id.main_description).setText(it.descr)
 
-        }
+            }
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

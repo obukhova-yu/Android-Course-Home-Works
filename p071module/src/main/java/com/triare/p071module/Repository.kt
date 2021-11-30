@@ -7,7 +7,7 @@ class Repository{
         return list.find { it.id == id }
     }
 
-    val list= listOf(
+    private val list= listOf(
 
         Gobo(R.id.i0410,R.string.geo_0410,R.string.descr_geo_0410,R.mipmap.ic_geo_0410),
         Gobo(R.id.i0005,R.string.geo_0005,R.string.descr_geo_0005,R.mipmap.ic_geo_0005),
@@ -30,3 +30,9 @@ class Repository{
     )
 
 }
+data class Gobo(
+    val id:Int,
+    val title:Int,
+    val descr:Int,
+    val icon: Int
+)

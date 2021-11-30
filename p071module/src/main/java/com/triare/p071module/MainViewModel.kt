@@ -18,10 +18,5 @@ class MainViewModel ():ViewModel(){
 }
 
 
-data class Gobo(
-    val id:Int,
-    val title:Int,
-    val descr:Int,
-    val icon: Int
-)
+
 
