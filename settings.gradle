@@ -10,3 +10,5 @@ rootProject.name = "Android Course Home Works"
 include ':app'
 include ':p062ConstraintLayout'
 include ':p071module'
+include ':p121_trivia_starter'
+include ':p111_2_weather_app'
