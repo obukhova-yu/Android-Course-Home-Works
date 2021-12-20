@@ -26,6 +26,7 @@
             android:background="@drawable/corner_radius_16"
             android:textColor="@color/white_gray"
             android:textSize="@dimen/text_size_small"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -52,7 +53,7 @@
             android:textSize="@dimen/text_size_big"
             app:layout_constraintStart_toEndOf="@id/temp_big"
             app:layout_constraintTop_toTopOf="@id/temp_big"
-            tools:text="°" />
+            android:text="°" />
 
 
         <TextView
@@ -116,6 +117,16 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/corner_radius_10"
+        android:textColor="@color/white_gray"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_hourly_weather" />
 
 
 </LinearLayout>
