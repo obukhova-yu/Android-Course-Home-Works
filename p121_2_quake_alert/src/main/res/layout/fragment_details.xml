@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.details.DetailsFragment">
+
+
+    <TextView
+        android:id="@+id/when_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big"
+        app:drawableStartCompat="@drawable/ic_time_access_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="22 day ago" />
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big"
+        app:drawableStartCompat="@drawable/ic_location_icon"
+        app:layout_constraintTop_toBottomOf="@id/when_q"
+        tools:ignore="MissingConstraints"
+        tools:text="32.7 km within quake epicentre" />
+
+    <TextView
+        android:id="@+id/quake_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quake_level"
+        android:textSize="@dimen/text_norm"
+        app:layout_constraintEnd_toStartOf="@+id/view1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/where"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_grey"
+        app:layout_constraintEnd_toStartOf="@+id/quake_power"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/quake_level"
+        app:layout_constraintTop_toBottomOf="@id/where" />
+
+    <TextView
+        android:id="@+id/quake_intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_norm"
+        app:layout_constraintTop_toBottomOf="@id/quake_level"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        tools:background="@color/yellow"
+        tools:text="weak" />
+
+    <TextView
+        android:id="@+id/quake_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/power"
+        android:textSize="@dimen/text_norm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@id/where"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/power_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_wave"
+        app:layout_constraintTop_toBottomOf="@id/quake_power"
+        app:layout_constraintStart_toStartOf="@id/quake_power"
+        tools:ignore="MissingConstraints"
+        tools:text="6.5" />
+
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="82dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/red"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_first_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="190dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_big"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:text="@string/det_title" />
+
+    <ImageView
+        android:id="@+id/image_hide"
+        android:layout_width="184dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/im_hide"
+        app:layout_constraintEnd_toStartOf="@+id/image_wait"
+        android:contentDescription="@string/content_descr_hide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_4" />
+
+    <ImageView
+        android:id="@+id/image_wait"
+        android:layout_width="184dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/im_wait"
+        android:contentDescription="@string/content_descr_wait"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_hide"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

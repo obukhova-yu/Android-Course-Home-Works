@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_gen_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_big"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:text="@string/rec_title" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="52dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="12dp"
+        android:paddingTop="10dp"
+        android:background="@color/red"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black"
+                android:src="@drawable/ic_baseline_circle_8"
+                android:contentDescription="@string/content_descr_dot"
+                />
+
+            <TextView
+                android:id="@+id/gen_content1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_norm"
+                android:textColor="@color/black"
+                android:text="@string/gen_rec_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/black"
+                android:contentDescription="@string/content_descr_dot"
+                android:src="@drawable/ic_baseline_circle_8"/>
+
+            <TextView
+                android:id="@+id/gen_content2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_norm"
+                android:textColor="@color/black"
+                android:text="@string/gen_rec_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:tint="@color/black"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/content_descr_dot"
+                android:src="@drawable/ic_baseline_circle_8"/>
+
+            <TextView
+                android:id="@+id/gen_content3"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_norm"
+                android:textColor="@color/black"
+                android:text="@string/gen_rec_content"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    app:tint="@color/black"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/content_descr_dot"
+                    android:src="@drawable/ic_baseline_circle_8"/>
+
+                <TextView
+                    android:id="@+id/gen_content4"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_norm"
+                    android:textColor="@color/black"
+                    android:text="@string/gen_rec_content"/>
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
