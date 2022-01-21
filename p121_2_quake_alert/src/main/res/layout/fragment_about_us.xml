@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp">
+
+    <TextView
+        android:id="@+id/text_ab_us"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/ab_us_title"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="52dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/red"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_circle_8"
+            android:contentDescription="@string/content_descr_dot"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/gen_content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/ab_us_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Earthquakes</string>
+
+    <string name="home_title">Home</string>
+    <string name="rec_title">General Recomendations</string>
+    <string name="det_title">First Recomendations</string>
+    <string name="ab_us_title">About Us</string>
+
+    <string name="quake_title">Earthquakes</string>
+
+    <string name="first_recommend_title">First recommendations</string>
+
+    <string name="content_descr_dot">dot</string>
+    <string name="content_descr_hide">hide</string>
+    <string name="content_descr_wait">wait</string>
+
+    <string name="distance_city_description">Distance to the city: %.1 + km</string>
+    <string name="distance_description">Distance to the epicentre: %.1 + km</string>
+
+
+    <string name="bar_not_title">barely noticeable</string>
+    <string name="weak_title">weak</string>
+    <string name="average_title">average</string>
+    <string name="strong_title">strong</string>
+    <string name="very_strong_title">very strong</string>
+
+    <string name="quake_level">Quake Level</string>
+    <string name="power">Power</string>
+
+    <string name="gen_rec_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="ab_us_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+</resources>

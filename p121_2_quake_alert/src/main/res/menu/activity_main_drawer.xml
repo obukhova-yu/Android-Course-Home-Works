@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_icon"
+            android:title="@string/home_title" />
+        <item
+            android:id="@+id/nav_ab_us"
+            android:icon="@drawable/ic_info_icon"
+            android:title="@string/ab_us_title" />
+        <item
+            android:id="@+id/nav_gen_rec"
+            android:icon="@drawable/ic_gen_recom_icon"
+            android:title="@string/rec_title" />
+    </group>
+</menu>

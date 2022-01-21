@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.triare.myapplicationdrawer.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action android:id="@+id/action_home_fragment_to_detail_fragment"
+            app:destination="@id/nav_details"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ab_us"
+        android:name="com.triare.myapplicationdrawer.ui.about_us.AboutUsFragment"
+        tools:layout="@layout/fragment_about_us" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gen_rec"
+        android:name="com.triare.myapplicationdrawer.ui.genRec.GenRecFragment"
+        tools:layout="@layout/fragment_gen_rec" />
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.triare.myapplicationdrawer.ui.details.DetailsFragment"
+        tools:layout="@layout/fragment_details" >
+    </fragment>
+</navigation>
