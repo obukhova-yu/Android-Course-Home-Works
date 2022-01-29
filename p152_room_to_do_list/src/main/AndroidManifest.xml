@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.triare.p152_room_to_do_list">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_fab"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_fab"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidCourseHomeWorks">
+        <activity
+            android:name=".TaskCreationActivity"
+            android:parentActivityName="com.triare.p152_room_to_do_list.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.triare.p152_room_to_do_list.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

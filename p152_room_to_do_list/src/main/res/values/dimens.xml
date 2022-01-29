@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Text Size -->
+    <dimen name="text_norm">16sp</dimen>
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_super">32sp</dimen>
+    <dimen name="text_little">14sp</dimen>
+
+    <!-- Margin Size -->
+    <dimen name="margin_norm">24dp</dimen>
+    <dimen name="margin_big">68dp</dimen>
+    <dimen name="margin_big2">52dp</dimen>
+    <dimen name="margin_little">16dp</dimen>
+
+    <!-- Button Size -->
+    <dimen name="button_size">56dp</dimen>
+
+    <!-- Second Layout Container Size -->
+    <dimen name="second_layout_container_height">120dp</dimen>
+    <dimen name="second_layout_container_horizontal">16dp</dimen>
+    <dimen name="second_layout_container_padding_vertical">20dp</dimen>
+
+    <!-- Item Add New Task Size -->
+    <dimen name="item_add_new_task_height">60dp</dimen>
+    <dimen name="item_add_new_task_padding_horizontal">24dp</dimen>
+
+</resources>

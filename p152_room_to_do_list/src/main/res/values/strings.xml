@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="app_main_title">To do list</string>
+
+    <string name="edit_text_title">Create the task</string>
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_add_task_title">Add task</string>
+    <string name="alert_dialog_task_title">Task Title</string>
+    <string name="alert_dialog_add_button">Add</string>
+    <string name="alert_dialog_cancel_button">Cancel</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_description_delete">Delete Icon</string>
+    <string name="content_description_edit">Edit Icon</string>
+    <string name="content_description_back">Back Icon</string>
+    <string name="content_description_confirm">Confirm Icon</string>
+
+    <!-- Menu Item Icons -->
+    <string name="title_menu_item_delete">Delete Icon</string>
+    <string name="title_menu_item_edit">Edit Icon</string>
+    <string name="title_menu_item_back">Back Icon</string>
+    <string name="title_menu_item_confirm">Confirm Icon</string>
+
+
+</resources>

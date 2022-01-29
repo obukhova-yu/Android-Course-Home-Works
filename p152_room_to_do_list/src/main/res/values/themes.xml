@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidCourseHomeWorks" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+           <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/red</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+    </style>
+
+    <style name="TextAppearance.ToDoLListApp.Title" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">IBM Plex Sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">@dimen/text_super</item>
+    </style>
+
+    <style name="TextAppearance.ToDoLListApp.Task.Category" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">IBM Plex Sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+
+    <style name="TextAppearance.ToDoLListApp.Task.Subtask" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">IBM Plex Sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/text_norm</item>
+    </style>
+
+    <style name="TextAppearance.ToDoLListApp.Button" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">IBM Plex Sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontWeight">600</item>
+        <item name="android:textSize">@dimen/text_super</item>
+        <item name="background">@color/red</item>
+        <item name="android:textAppearance">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+
+
+
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        ...
+        <item name="checkboxStyle">@style/Widget.App.CheckBox</item>
+    </style>
+
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CheckBox</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CheckBox" parent="">
+        <item name="colorOnSurface">@color/red</item>
+        <item name="colorSecondary">@color/light_red</item>
+    </style>
+</resources>
